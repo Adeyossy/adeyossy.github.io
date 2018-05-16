@@ -1,0 +1,58 @@
+.centered{
+    margin: auto;
+}
+
+.centered>h1,h3,h4{
+    font-family: Georgia;
+}
+
+.centered>p{
+    font-family: Cambria;
+}
+
+.navbar{
+    z-index: 4;
+}
+
+.rounded-circle{
+    width: 200px;
+    height: 200px;
+}
+
+img{
+    border-style: solid;
+    border: 1px;
+    border-top: 2px;
+    border-color: black;
+}
+
+a:active{
+    color: burlywood;
+}
+
+.navbar{
+    justify-content: flex-end;
+}
+
+.first{
+    /* padding: 64px 0 64px 0; */
+    height: 100vh;
+}
+
+.alternate{
+    background-color: #FFF5EE;
+}
+
+footer>div{
+    margin: auto;
+}
+
+.bio{
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+hr{
+    stroke-width: 2px;
+    color: black;
+}
