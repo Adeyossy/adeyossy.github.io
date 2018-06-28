@@ -36,7 +36,11 @@ a:active{
 
 .first{
     /* padding: 64px 0 64px 0; */
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.bigger{
+    height: 120vh;
 }
 
 .alternate{
