@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(128, 0, 75);
+}
+
+/* Overriding native HTML Elements */
+/* ------------------------------- */
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+}
+
+h4{
+    margin: 0;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24pt;
+}
+
+p{
+    margin: 8px 0 8px 0;
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+/* ----- end of override ----- */
+
+nav{
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 16px 5% 16px 2%;
+    background-color: rgb(252, 252, 252);
+}
+
+img#brand-logo{
+    width: auto;
+    height: 5vh;
+}
+
+img#dropdown-button{
+    transition: transform 500ms ease;
+}
+
+.nav-brand{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    width: inherit;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    animation: dropdownMotion 500ms 1 alternate;
+}
+
+div.nav-link-container{
+    width: 100%;
+}
+
+a.nav-link{
+    width: 100%;
+    padding: 8px 8px;
+    font-weight: 400;
+    text-align: center;
+}
+
+a.active-nav-link{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+a.nav-link:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+a.nav-link:active{
+    color: var(--primary-color);
+}
+
+main.content{
+    width: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic-material-container{
+    width: inherit;
+    /* flex-basis: 50%; */
+    height: 40vh;
+    padding: 7% 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+img.graphic-material{
+    width: auto;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.graphic-description-container{
+    width: inherit;
+    /* flex-basis: 50%; */
+    height: 50vh;
+    padding: 7% 5%;
+}
+
+h4.description-heading{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+p.description-text{
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h4.reviewer-client{
+    width: 100%;
+    text-align: right;
+}
+
+#left-button{
+    position: absolute;
+    top: 0; bottom: 0; left: 1%;
+    margin: auto;
+}
+
+#right-button{
+    position: absolute;
+    top: 0; bottom: 0; right: 1%;
+    margin: auto;
+}
+
+.navigation-button{
+    margin: auto;
+    color: inherit;
+}
+
+.navigation-button:hover{
+    color: white;
+}
+
+.navigation-buttons{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 400ms ease-in, background-color 400ms ease-in;
+}
+
+.navigation-buttons:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.navigation-buttons:active{
+    background-color: rgb(242, 242, 242);
+}
+
+.animateInClass{
+    animation: animateIn 500ms 1;
+}
+
+.animateOutClass{
+    animation: animateOut 500ms 1;
+}
+
+@keyframes animateIn{
+    from{
+        margin-left: 100%;
+    }
+
+    to{
+        margin-left: 0;
+    }
+}
+
+@keyframes animateOut{
+    from{
+        margin-right: 100%;
+    }
+
+    to{
+        margin-right: 0;
+    }
+}
+
+@keyframes dropdownMotion{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1224px){
+    p{
+        font-size: 20pt;
+    }
+
+    nav{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-flow: row nowrap;
+        flex-basis: 50%;
+    }
+
+    a.nav-link{
+        width: auto;
+    }
+
+    img#dropdown-button{
+        display: none;
+    }
+
+    main.content{
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .graphic-material-container{
+        width: 50%; 
+        height: 90vh;
+        /* padding-bottom: 0; */
+    }
+
+    .graphic-description-container{
+        width: 50%; 
+        height: 90vh;
+        padding-left: 0;
+    }
+
+    img.graphic-material{
+        width: auto;
+        height: 60vh;
+    }
+}
