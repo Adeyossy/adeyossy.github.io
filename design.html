@@ -114,6 +114,7 @@
     }
 
     const handleAnimations = (index, className) => {
+        graphicMaterial.src = "";
         nextItem(designJobsArray[index % designJobsArray.length]);
         mainContent.classList.add(className);
         setTimeout(() => mainContent.classList.remove(className), 500);
