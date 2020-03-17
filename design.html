@@ -19,9 +19,9 @@
         </div>
         <div class="nav-links">
             <a href="#" class="nav-link active-nav-link">Graphics Design</a>
-            <a href="#" class="nav-link">Websites</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="./index.html#websites" class="nav-link">Websites</a>
+            <a href="./index.html#about" class="nav-link">About</a>
+            <a href="./index.html#contact" class="nav-link">Contact</a>
         </div>
     </nav>
     <main class="content">
@@ -47,35 +47,35 @@
         {
             name: "Chrissy's Small Chops",
             review: "...Awaiting review...",
-            src: "./images/chrissy-chops.jpg",
+            src: "./images/design/chrissy-chops.jpg",
             width: "auto",
             height: "100%"
         },
         {
             name: "FAMSA World Antibiotics Day",
             review: "...Awaiting review...",
-            src: "./images/antibiotics.jpg",
+            src: "./images/design/antibiotics.jpg",
             width: "auto",
             height: "90%"
         },
         {
             name: "Lorence Naturals",
             review: "The flyer was perfect, exactly to my specifications and you weren’t too busy to work one on one with me to bring out the idea in my head. You were very patient with me and the flyer came out really nice. Professionalism and patience is Gold. Thank you very much for it.",
-            src: "./images/lorence.jpg",
+            src: "./images/design/lorence.jpg",
             width: "auto",
             height: "80%"
         },
         {
             name: "UIMSA Clinical Press",
             review: "...Awaiting review...",
-            src: "./images/uimsa-clinical-press.jpg",
+            src: "./images/design/uimsa-clinical-press.jpg",
             width: "auto",
             height: "90%"
         },
         {
             name: "Calvary Love Singers Night",
             review: "...Awaiting review...",
-            src: "./images/CLS-night.jpg",
+            src: "./images/design/CLS-night.jpg",
             width: "auto",
             height: "100%"
         }
@@ -103,7 +103,7 @@
         dropdownState ? navLinks.style.display = "flex" : navLinks.style.display = "none";
         dropdownButton.style.transform = `rotate(${rotationState}deg)`;
         // setTimeout(() => dropdownButton.style.transform = "", 500);
-    })
+    });
 
     const nextItem = (item) => {
         graphicMaterial.src = item.src;

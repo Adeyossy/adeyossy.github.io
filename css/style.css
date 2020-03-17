@@ -1,3 +1,8 @@
+a{
+    color: black;
+    border-radius: 12px;
+}
+
 .centered{
     margin: auto;
 }
@@ -93,6 +98,56 @@ hr{
 .flyer h4{
     font-size: 1.5em;
     /* line-height: 1; */
+}
+
+.deyosse-portfolio-row{
+    padding: 2%;
+    margin: 2%;
+}
+
+.deyosse-tags{
+    border: 1px solid #2f0044;
+    margin: 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Caladea', sans-serif;
+}
+
+#nodejs{
+    border-color: yellow;
+    color: yellow;
+}
+
+#angular{
+    border-color: red;
+    color: red;
+}
+
+.deyosse-portfolio-header{
+    font-family: 'Raleway', sans-serif;
+}
+
+.deyosse-portfolio-text{
+    font-family: 'Caladea', sans-serif;
+    font-weight: 400;
+}
+
+a.deyosse-portfolio-link{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 8px;
+    transition: background-color 400ms ease-in, transform 400ms ease-in, color 400ms ease;
+    /* box-shadow: 1px 1px 1px gray; */
+}
+
+a.deyosse-portfolio-link:hover{
+    background-color: gray;
+    color: white;
+    font-weight: 600;
+    transform: scale(1.2);
+    text-decoration: none;
+    box-shadow: 1px 1px 4px gray;
 }
 
 @media only screen and (min-width: 768px){

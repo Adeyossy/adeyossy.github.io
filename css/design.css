@@ -258,7 +258,7 @@ h4.reviewer-client{
     }
 
     img.graphic-material{
-        width: auto;
-        height: 60vh;
+        min-width: 50%;
+        max-height: 60vh;
     }
 }
