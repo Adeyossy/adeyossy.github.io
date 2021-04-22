@@ -13,6 +13,7 @@ body{
     font-family: 'Segoe UI', sans-serif;
     color: black;
     margin: 0px;
+    overflow: hidden;
 }
 
 a{
@@ -97,6 +98,7 @@ main.content{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .graphic-material-container{
@@ -187,21 +189,21 @@ h4.reviewer-client{
 
 @keyframes animateIn{
     from{
-        margin-left: 100%;
+        transform: translateX(100%);
     }
 
     to{
-        margin-left: 0;
+        transform: translateX(0%)
     }
 }
 
 @keyframes animateOut{
     from{
-        margin-right: 100%;
+      transform: translateX(-100%)
     }
 
     to{
-        margin-right: 0;
+      transform: translateX(0%)
     }
 }
 
